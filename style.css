@@ -1,0 +1,87 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    color: #343a40;
+}
+
+#contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Pantallas */
+.pantalla {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.pantalla:not(.ocultar) {
+    display: block;
+}
+
+/* Barra de progreso */
+#barra-progreso-container {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#barra-progreso {
+    width: 0%;
+    height: 10px;
+    background-color: #28a745;
+    border-radius: 5px;
+    transition: width 0.3s;
+}
+
+/* Preguntas */
+#pregunta-texto {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+#opciones-lista {
+    list-style: none;
+    padding: 0;
+}
+
+.opcion {
+    background-color: #ffffff;
+    border: 2px solid #ced4da;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.opcion:hover {
+    background-color: #f1f1f1;
+    border-color: #28a745;
+}
+
+/* Botones */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Pantalla de resultados */
+#mensaje-final {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #333;
+}

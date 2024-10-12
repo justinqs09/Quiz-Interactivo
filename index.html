@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="contenedor">
+        <!-- Pantalla de preguntas -->
+        <div id="preguntas-pantalla" class="pantalla">
+            <div id="barra-progreso-container">
+                <div id="barra-progreso"></div>
+            </div>
+            <p id="pregunta-texto"></p>
+            <ul id="opciones-lista"></ul>
+            <button id="siguiente-btn">Siguiente</button>
+        </div>
+
+        <!-- Pantalla de resultados -->
+        <div id="resultados-pantalla" class="pantalla ocultar">
+            <p>Tu puntaje: <span id="puntaje-final"></span> de <span id="total-preguntas"></span></p>
+            <p id="mensaje-final"></p>
+            <h3>Revisa tus respuestas incorrectas:</h3>
+            <div id="detalles-errores"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
